@@ -23,7 +23,7 @@ This is a React-based app where you can build JSON schemas visually by adding, e
 ---
 
 ## 🚀 Live Demo
-🔗 [Click here to open the app](https://your-vercel-link.vercel.app)
+🔗 [Click here to open the app](https://json-schema-builder-snowy.vercel.app/)
 
 ---
 
