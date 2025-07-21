@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #a6c0fe, #f68084);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  color: #333;
+  overflow: hidden; 
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.schema-builder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.schema-scroll-wrapper {
+  width: 90%;
+  max-width: 900px;
+  height: 70vh;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+
+.schema-box {
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.schema-box:hover {
+  transform: translateY(-4px);
+}
+
+.schema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 6px 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #5a67d8;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #434190;
+}
+
+.nested-fields {
+  margin-left: 30px;
+  margin-top: 10px;
+  border-left: 2px dashed #aaa;
+  padding-left: 10px;
+}
+
+.add-field-btn,
+.add-scope-btn {
+  margin-top: 10px;
+  background-color: #38a169;
+}
+
+.add-field-btn:hover,
+.add-scope-btn:hover {
+  background-color: #2f855a;
+}
+
+.json-preview {
+  margin-top: 10px;
+  background: #f7fafc;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-x: auto;
+}
